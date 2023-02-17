@@ -1,0 +1,21 @@
+.grid {
+   display:grid;
+   grid-template-areas: "cell1" "cell2" "cell3" "cell4";
+   gap: 3.2rem;
+}
+
+.cell1 {
+   grid-area: cell1;
+}
+
+.cell2 {
+   grid-area: cell2;
+}
+
+.cell3 {
+   grid-area: cell3;
+}
+
+.cell4 {
+   grid-area: cell4;
+}

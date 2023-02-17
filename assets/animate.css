@@ -1,0 +1,66 @@
+ .animate-in-left {
+   animation: inLeft 700ms forwards;
+ }
+ .animate-in-right {
+   animation: inRight 700ms forwards;
+ }
+
+ @keyframes topdown {
+   0% {
+      opacity: 0;
+      transform: translateY(-15px)
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0)      
+   }
+ }
+ 
+ @keyframes downtop {
+   0% {
+      opacity: 0;
+      transform: translateY(100px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+ }
+
+ @keyframes inLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-100px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+ }
+
+ @keyframes inRight {
+   0% {
+      opacity: 0;
+      transform: translateX(20px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+ }
+
+
+/*
+animation-name (obrigatória): especifica o nome da animação. O valor deve ser um identificador que corresponda ao nome de uma regra @keyframes.
+animation-duration (opcional): especifica a duração da animação. O valor pode ser especificado em segundos (s) ou milissegundos (ms).
+animation-timing-function (opcional): especifica a função de temporização da animação, que define como a animação progride ao longo do tempo. Os valores possíveis são: ease, linear, ease-in, ease-out, ease-in-out, step-start, step-end ou uma função de cubic-bezier.
+animation-delay (opcional): especifica o tempo de espera antes do início da animação. O valor pode ser especificado em segundos (s) ou milissegundos (ms).
+animation-iteration-count (opcional): especifica o número de vezes que a animação é executada. O valor pode ser um número inteiro ou infinite.
+animation-direction (opcional): especifica a direção da animação, que pode ser normal (padrão), reverse, alternate ou alternate-reverse.
+animation-fill-mode (opcional): especifica o estado inicial e final da animação. Os valores possíveis são none (padrão), forwards, backwards e both.
+animation-play-state (opcional): especifica se a animação está em execução ou pausada. Os valores possíveis são running (padrão) e paused.
+*/ 
